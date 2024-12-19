@@ -1,0 +1,19 @@
+mat-card{
+
+    width:80%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.mat-mdc-unelevated-button{
+   margin: 1px;
+}

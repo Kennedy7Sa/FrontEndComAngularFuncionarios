@@ -1,0 +1,65 @@
+<mat-card>
+
+<div>
+    <h1>Detalhes Funcionario</h1>
+    <div>
+        <form >
+              <div class="input_box">
+                <mat-form-field>
+                <mat-label>Nome</mat-label>
+                <input matInput type="text" value="{{funcionario?.nome}}" disabled>
+              </mat-form-field>
+              </div>  
+              
+              <div class="input_box">
+              <mat-form-field>
+                <mat-label>Sobrenome</mat-label>
+                <input matInput type="text" value="{{funcionario?.sobrenome}}" disabled>
+              </mat-form-field>
+              </div>  
+
+              <div class="input_box">
+              <mat-form-field>
+                <mat-label>Departamento</mat-label>
+                <input matInput type="text" value="{{funcionario?.departamento}}"disabled>
+              </mat-form-field>
+              </div>  
+
+              <div class="input_box">
+              <mat-form-field>
+                <mat-label>Turno</mat-label>
+                <input matInput type="text" value="{{funcionario?.turno}}"disabled>
+              </mat-form-field>  
+              </div>  
+
+              <div class="input_box">
+              <mat-form-field>
+                <mat-label>Situação</mat-label>
+                <input matInput type="text" value="{{funcionario?.ativo == true? 'Ativo':'Inativo'}}"disabled>
+              </mat-form-field>
+              </div>  
+              
+              <div class="input_box">
+              <mat-form-field>
+                <mat-label>Data de criação </mat-label>
+                <input matInput type="text" value="{{funcionario?.dataCriacao}}"disabled>
+              </mat-form-field>
+              </div>  
+
+              <div class="input_box">
+              <mat-form-field>
+                <mat-label>Data de alteração </mat-label>
+                <input matInput type="text" value="{{funcionario?.dataDeAlteracao}}"disabled>
+              </mat-form-field>
+              </div>
+
+              <div class="btn-box">
+                    <button mat-flat-button (click)= "InativaFuncionario()">Inativar funcionario</button>
+                    <button mat-raised-button  routerLink="">Voltar</button>
+              </div>
+
+
+        </form>
+    </div>
+</div>
+</mat-card>

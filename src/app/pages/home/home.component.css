@@ -1,0 +1,21 @@
+/* classe do botão de excluir  */
+.mat-mdc-fab{
+    width: 40px;
+    height: 40px;
+}
+.mat-mdc-unelevated-button{
+    margin: 8px 8px 8px 0px;
+}
+
+.funcionario-box{
+
+    width: 100%;
+    gap: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    margin-bottom: 2re;
+
+
+}
